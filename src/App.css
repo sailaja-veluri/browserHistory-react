@@ -20,14 +20,16 @@ body {
 .history-header-container {
   display: flex;
   flex-direction: row;
-  flex-direction: flex-start;
+
+  justify-content: flex-start;
   background-color: #3367d6;
-  padding: 8px;
+  padding: 20px;
 }
 .histrory-logo {
   height: 30px;
-  width: 60px;
-  margin-right: 20px;
+  width: 100px;
+  margin-left: 100px;
+  margin-right: 200px;
 }
 
 .search-container {
@@ -35,6 +37,7 @@ body {
   flex-direction: row;
   flex-direction: flex-start;
   background-color: #2850a7;
+  margin-left: 150px;
 }
 .search-logo {
   height: 30px;
@@ -44,6 +47,8 @@ body {
 }
 .input-ele {
   color: #ececec;
+  background-color: #2850a7;
+  width: 400px;
 }
 
 .body-container {
@@ -58,8 +63,13 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  background-color: #f8fafc;
+  border-radius: 10px;
 }
 .No-history {
   color: #475569;
   align-self: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 300px;
 }

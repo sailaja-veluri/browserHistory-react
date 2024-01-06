@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 80vw;
 }
 .history-details {
   display: flex;
@@ -15,9 +16,10 @@
   margin-right: 20px;
 }
 .website-img {
-  height: 40px;
-  width: 40px;
+  height: 20px;
+  width: 20px;
   margin-right: 10px;
+  margin-top: 25px;
 }
 .history-title {
   color: #475569;
@@ -27,10 +29,12 @@
 .history-domain-name {
   color: #64748b;
   font-size: 10px;
+  padding-top: 20px;
+  margin-left: 10px;
 }
 
 .delete-button {
-  background-color: none;
+  background-color: #f8fafc;
   border: none;
 }
 .delete-img {

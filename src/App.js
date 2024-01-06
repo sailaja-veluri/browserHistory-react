@@ -99,7 +99,7 @@ class App extends Component {
   render() {
     const {searchInput, historyList} = this.state
     const searchResults = historyList.filter(eachOne =>
-      eachOne.name.toLowerCase().includes(searchInput),
+      eachOne.title.toLowerCase().includes(searchInput),
     )
     return (
       <div className="history-container">
@@ -125,19 +125,19 @@ class App extends Component {
           </div>
         </div>
         <div className="body-container">
-          <ul className="list-container">
-            {searchResults === undefined || searchResults.length === 0 ? (
-              <p className="No-history">There is no history to show</p>
-            ) : (
-              searchResults.map(eachOne => (
+          {searchResults === undefined || searchResults.length === 0 ? (
+            <p className="No-history">There is no history to show</p>
+          ) : (
+            <ul className="list-container">
+              {searchResults.map(eachOne => (
                 <HistoryItem
                   historyDetails={eachOne}
                   key={eachOne.id}
                   deleteHistory={this.deleteHistory}
                 />
-              ))
-            )}
-          </ul>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
     )
